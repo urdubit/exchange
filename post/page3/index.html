@@ -41,8 +41,8 @@
     <link href="https://urdubit.com/exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://urdubit.com/exchange/assets/themes/default/css/style.css?v=07e6111" rel="stylesheet">
-    <script data-cfasync="false" src="https://urdubit.com/exchange/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=07e6111" type="text/javascript"></script>
+    <link href="https://urdubit.com/exchange/assets/themes/default/css/style.css?v=9abd669" rel="stylesheet">
+    <script data-cfasync="false" src="https://urdubit.com/exchange/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=9abd669" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -66,8 +66,8 @@
             <li><a href="" data-switch-view="faq">FAQ</a></li>
             <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Trading</a></li>
             <li><a href="" data-switch-view="market">Market</a></li>
-            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Sigin</a></li>
-            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Signup</a></li>
+            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Signin</a></li>
+            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Sign up</a></li>
             
 
             <li class="dropdown">
@@ -85,6 +85,12 @@
                 
                   
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/pt_BR">PT_BR</a></li>
+                  
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/ro">RO</a></li>
                   
                 
               
@@ -135,7 +141,7 @@
           <div class="clearfix" style="height: 20px"></div>
           <div class="row-fluid">
             <span class="text-center">
-              <a href="" class="btn btn-success btn-large" data-switch-view="signup">Signup</a>
+              <a href="" class="btn btn-success btn-large" data-switch-view="signup">Sign up</a>
             </span>
           </div>
         </form>
@@ -402,7 +408,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
   <!-- signup page-->
   <div id="signup" class="page  row-fluid bitex-view">
     <div class="page-header">
-      <h1 class="bitex-view-title">Signup</h1>
+      <h1 class="bitex-view-title">Sign up</h1>
     </div>
     <p>Already registered? <a href="#" data-switch-view="signin">Login</a>.</p>
 
@@ -479,7 +485,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
       <div class="control-group">
         <div class="controls">
-          <button id="id_btn_signup" class="btn btn-primary">Signup</button>
+          <button id="id_btn_signup" class="btn btn-primary">Sign up</button>
         </div>
       </div>
     </div>
@@ -488,9 +494,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
   <!-- signin page-->
   <div id="signin" class="page  row-fluid bitex-view">
     <div class="page-header">
-      <h1 class="bitex-view-title">Sigin</h1>
+      <h1 class="bitex-view-title">Signin</h1>
     </div>
-    <p>Don't have an account? <a href="#" data-switch-view="signup">Singup</a></p>
+    <p>Don't have an account? <a href="#" data-switch-view="signup">Sign up</a></p>
 
     <div class="bitex-view-content">
       <form accept-charset="UTF-8" action="" method="post">
@@ -509,7 +515,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         <p><a href="#" data-switch-view="forgot_password">Forgot your password?</a></p>
 
         <div class="actions">
-          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="Login">
+          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="Signin">
         </div>
       </form>
     </div>
@@ -572,23 +578,39 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     </div>
   </div>
 
+  <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="verification"> You have not submitted your documents. Please verify your account. </a>
+  </div>
+
+  <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="profile"> You can increase the security of your account by enabling authentication in two steps </a>
+  </div>
+
+  <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="faq"> Your account has been frozen by the administrator, please contact support. </a>
+  </div>
+
+
   <div class="page row-fluid bitex-display-if-logged">
     <div class="span9">
       <div id="profile" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">My Profile</h3>
         </div>
-        <div id="profile_content" class="bitex-view-content">
+        <div id="profile_content" class="">
           <div id="account_overview_user_id"></div>
-        </div>
-
-        <div class="section-title">
-          <h3 class="bitex-view-title">Enable or Disable Two steps authentication</h3>
         </div>
 
         <div class="content bitex-view-content">
 
           <div class="well span6">
+            <div class="section-title">
+              <h3 class="bitex-view-title">Two factor authentication (2FA)</h3>
+            </div>
+
             <div id="id_enable_two_factor_div" class="form-horizontal ">
 
               <div class="control-group">
@@ -620,6 +642,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             <button id="id_btn_enable_two_factor" class="btn btn-primary">Enable</button>
             <button id="id_btn_disable_two_factor" class="btn btn-danger">Disable</button>
           </div>
+
         </div>
       </div>
 
@@ -916,7 +939,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 07e6111 |
+          Version: 9abd669 |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
