@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     
-        <title>UrduBit - The first bitcoin exchange in Pakistan</title>
-      
+    
+    <title> UrduBit - The first bitcoin exchange in Pakistan </title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="BlinkTrade">
 
     
-        <meta name="description" content="The first bitcoin exchange in Pakistan">
-        <meta name="keywords" content="Buy and sell bitcoin in Pakistan, bitcoin exchange in Pakistan, sell bitcoins in Pakistan, buy bitcoins in Pakistan">
-        <meta property="og:title" content="UrduBit - The first bitcoin exchange in Pakistan">
-        <meta property="og:description" content="The first bitcoin exchange in Pakistan">
-      
+    
+
+    <meta name="description" content="The first bitcoin exchange in Pakistan">
+    <meta name="keywords" content="Buy and sell bitcoin in Pakistan, bitcoin exchange in Pakistan, sell bitcoins in Pakistan, buy bitcoins in Pakistan">
+    <meta property="og:title" content="UrduBit - The first bitcoin exchange in Pakistan">
+    <meta property="og:description" content="The first bitcoin exchange in Pakistan">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://urdubit.com/exchange/ro/urdubit.html">
@@ -42,8 +43,9 @@
     <link href="https://urdubit.com/exchange/ro/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/ro/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://urdubit.com/exchange/ro/assets/themes/default/css/style.css?v=f110c1d" rel="stylesheet">
-    <script data-cfasync="false" src="https://urdubit.com/exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=f110c1d" type="text/javascript"></script>
+    <link href="https://urdubit.com/exchange/ro/assets/themes/default/css/style.css?v=b18b117" rel="stylesheet">
+    <script data-cfasync="false" src="https://urdubit.com/exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=b18b117" type="text/javascript"></script>
+    <script src="https://urdubit.com/exchange/ro/assets/js/externs/qrcode.min.js"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -85,6 +87,13 @@
               
                 
                   
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/zn_CN">
+                      <span class="flag-icon flag-icon-zn_CN"></span></a></li>
+                  
+                
+              
+                
+                  
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/es">
                       <span class="flag-icon flag-icon-es"></span></a></li>
                   
@@ -97,13 +106,6 @@
                   
                 
               
-                
-              
-                
-                  
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/zn_CN">
-                      <span class="flag-icon flag-icon-zn_CN"></span></a></li>
-                  
                 
               
                 
@@ -254,7 +256,7 @@
  Cu alte cuvinte de fiecare data când Bitcoinii sunt mutați din portofelul cu semnături multiple rece(neconectat la internet) în portofelul cald(conectat la internet), efectuăm o verificare completă a sistemului.</p>
 
 <p>Portofelele calde sunt stocate pe serverele blockchain.info și păstrăm doar cantități mici de bitcoin pentru a efectuă operațiuni de zi cu zi. 
-Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info </p>
+Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info</p>
 
 <p>Nici un exchange din lume nu este 100% sigur. Cu toate măsurile noastre de siguranță nu vrem să creăm o comoară de bitcoin, care ar provoca hack-eri să încerce să compromită exchange-ul.</p>
 
@@ -804,7 +806,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: f110c1d |
+          Version: b18b117 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -818,13 +820,14 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
     <script data-cfasync="false" type="text/javascript">
       var _app;  // global application object
       (function(){
-        var broker_id = 8;
+        var broker_id = 4;
         var country_code = "PK";
         var blinktrade_api = "api.blinktrade.com";
+        var symbol = "BTCPKR";
 
         var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
-        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
         _app.run(blinktrade_api);
       })();
     </script>

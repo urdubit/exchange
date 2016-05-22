@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     
-        <title>UrduBit - 巴基斯坦的第一家比特币交易平台</title>
-      
+    
+    <title> UrduBit - 巴基斯坦的第一家比特币交易平台 </title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="BlinkTrade">
 
     
-        <meta name="description" content="-巴基斯坦的第一家比特币交易平台">
-        <meta name="keywords" content="在巴基斯坦如何购买比特币">
-        <meta property="og:title" content="UrduBit - 巴基斯坦的第一家比特币交易平台">
-        <meta property="og:description" content="-巴基斯坦的第一家比特币交易平台">
-      
+    
+
+    <meta name="description" content="-巴基斯坦的第一家比特币交易平台">
+    <meta name="keywords" content="在巴基斯坦如何购买比特币">
+    <meta property="og:title" content="UrduBit - 巴基斯坦的第一家比特币交易平台">
+    <meta property="og:description" content="-巴基斯坦的第一家比特币交易平台">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://urdubit.com/exchange/zn_CN/urdubit.html">
@@ -42,8 +43,9 @@
     <link href="https://urdubit.com/exchange/zn_CN/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/zn_CN/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/zn_CN/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://urdubit.com/exchange/zn_CN/assets/themes/default/css/style.css?v=f110c1d" rel="stylesheet">
-    <script data-cfasync="false" src="https://urdubit.com/exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=f110c1d" type="text/javascript"></script>
+    <link href="https://urdubit.com/exchange/zn_CN/assets/themes/default/css/style.css?v=b18b117" rel="stylesheet">
+    <script data-cfasync="false" src="https://urdubit.com/exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=b18b117" type="text/javascript"></script>
+    <script src="https://urdubit.com/exchange/zn_CN/assets/js/externs/qrcode.min.js"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -84,6 +86,8 @@
                 
               
                 
+              
+                
                   
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/es">
                       <span class="flag-icon flag-icon-es"></span></a></li>
@@ -102,8 +106,6 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://urdubit.com/exchange/ro">
                       <span class="flag-icon flag-icon-ro"></span></a></li>
                   
-                
-              
                 
               
                 
@@ -702,7 +704,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: f110c1d |
+          Version: b18b117 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -716,13 +718,14 @@
     <script data-cfasync="false" type="text/javascript">
       var _app;  // global application object
       (function(){
-        var broker_id = 8;
+        var broker_id = 4;
         var country_code = "PK";
         var blinktrade_api = "api.blinktrade.com";
+        var symbol = "BTCPKR";
 
         var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
-        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
         _app.run(blinktrade_api);
       })();
     </script>
