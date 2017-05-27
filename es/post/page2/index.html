@@ -38,15 +38,15 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://urdubit.com/exchange/es/assets/themes/default/css/style-new.css?v=5492631" rel="stylesheet">
+  <link href="https://urdubit.com/exchange/es/assets/themes/default/css/style-new.css?v=9791a5c" rel="stylesheet">
   <link href="https://urdubit.com/exchange/es/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://urdubit.com/exchange/es/assets/themes/coinage/sass/main.darkgreen.css?v=5492631" rel="stylesheet">
+    <link href="https://urdubit.com/exchange/es/assets/themes/coinage/sass/main.darkgreen.css?v=9791a5c" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://urdubit.com/exchange/es/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://urdubit.com/exchange/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=5492631" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://urdubit.com/exchange/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=9791a5c" type="text/javascript"></script>
   <script src="https://urdubit.com/exchange/es/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
   <script src="https://urdubit.com/exchange/es/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   <script src="https://urdubit.com/exchange/es/assets/js/externs/qrcode.min.js"></script>
@@ -2027,7 +2027,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     </li>
                     
                     <li>
-                        Version: 5492631
+                        Version: 9791a5c
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -2093,10 +2093,12 @@ También podrá revisar su historial de depósitos y retiros median</p>
     (function(){
       var broker_id = 8;
       var country_code = "PK";
-      var blinktrade_api = "api.blinktrade.com";
+      var blinktrade_api = "ws.blinktrade.com";
       var symbol = "BTCPKR";
 
       var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
+
+      alert('We are under maintenance until Sunday 1am.');
 
       _app = new BlinkTradeApp(broker_id, remittance_box, country_code, symbol);
       _app.run(blinktrade_api);
