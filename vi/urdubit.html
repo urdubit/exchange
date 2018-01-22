@@ -43,8 +43,8 @@
     <link href="https://urdubit.com/exchange/vi/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/vi/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://urdubit.com/exchange/vi/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://urdubit.com/exchange/vi/assets/themes/default/css/style.css?v=659fde0" rel="stylesheet">
-    <script data-cfasync="false" src="https://urdubit.com/exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.default.js?v=659fde0" type="text/javascript"></script>
+    <link href="https://urdubit.com/exchange/vi/assets/themes/default/css/style.css?v=139a7a9" rel="stylesheet">
+    <script data-cfasync="false" src="https://urdubit.com/exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.default.js?v=139a7a9" type="text/javascript"></script>
     <script src="https://urdubit.com/exchange/vi/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -55,8 +55,8 @@
         <div class="container">
 
           
-          <a href="#" class="brand" data-switch-view="offerbook">
-            <img data-switch-view="offerbook" src="https://urdubit.com/exchange/vi/assets/exchange_logos/urdubit_toolbar_logo.png" style="
+          <a href="#" class="brand" data-switch-view="trading">
+            <img data-switch-view="trading" src="https://urdubit.com/exchange/vi/assets/exchange_logos/urdubit_toolbar_logo.png" style="
                 height: 30px;
                 margin-top: -10px;
                 margin-bottom: -10px;
@@ -71,8 +71,8 @@
                 <a href="" data-switch-view="faq">Hỏi & Đáp</a>
               
             </li>
-            <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Giao dịch</a></li>
-            <li><a href="" data-switch-view="market">Thị trường</a></li>
+            <li class="bitex-display-if-logged"><a href="" data-switch-view="trading">Giao dịch</a></li>
+            <li class="bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element"><a href="" data-switch-view="market">Thị trường</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Đăng nhập</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Đăng ký</a></li>
             
@@ -1232,14 +1232,12 @@
       <div class="container">
         <p>
           
-          <a href="" data-switch-view="admin">admin</a> |
           Độ trễ: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Phiên bản: 659fde0 |
+          Phiên bản: 139a7a9 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
-          | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
-          | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a> 
+          | <a href="https://github.com/blinktrade/" target="_blank">Follow us on GitHub<span class="bitex-model" data-model-key="JSVersion"></span></a>
         </p>
       </div>
     </footer>
@@ -1252,11 +1250,12 @@
         var country_code = "PK";
         var blinktrade_api = "ws.blinktrade.com";
         var symbol = "BTCPKR";
+        var required_level_to_be_a_pro_trader = 0;
 
         var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
-        _app.run(blinktrade_api);
+        _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
       })();
     </script>
     
